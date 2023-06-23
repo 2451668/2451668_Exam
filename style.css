@@ -1,3 +1,4 @@
+/*One of the best fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
 
 ::-webkit-scrollbar {
@@ -36,6 +37,8 @@ nav {
     flex-wrap: wrap;
     box-align: center;
     justify-content: space-between;
+    background-color: #000000;
+    border-radius: 15px 15px 0 0
     
 }
 nav ul li {
@@ -68,13 +71,18 @@ nav ul li a:hover::after{
     width: 100%;
 
 }
+.header-text{
+    background-color: #ffffff;
+    padding: 100px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+}
 .header-text p{
-    font-weight: bold;
-    margin-top: 20%;
     font-size: 30px;
+    font-weight: 600;
 }
 .header-text h1{
-    margin-top: 20px;
     font-size: 60px;
+    margin-top: 30%;
     font-weight: bolder;
 }
