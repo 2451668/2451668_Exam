@@ -37,7 +37,7 @@ nav {
     flex-wrap: wrap;
     box-align: center;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
     border-radius: 15px 15px 0 0
     
 }
@@ -72,10 +72,11 @@ nav ul li a:hover::after{
 
 }
 .header-text{
-    background-color: #ffffff;
+    /*Header styling*/
     padding: 100px;
+    background-color: rgb(255, 255, 255);
     border-radius: 0 0 15px 15px;
-    box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.25);
 }
 .header-text p{
     font-size: 30px;
@@ -85,4 +86,32 @@ nav ul li a:hover::after{
     font-size: 60px;
     margin-top: 30%;
     font-weight: bolder;
+}
+
+/* -- Beginning of About me styling -- */
+#about{
+    padding: 80px 0;
+    color: #000;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.about-column-one{
+    flex-basis: 35%;
+}
+.about-column-one img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.25);
+}
+.about-column-two{
+    flex-basis: 60%;
+}
+.subtext{
+    font-size: 50px;
+    font-weight: 900;
+    color: #000000;
 }
