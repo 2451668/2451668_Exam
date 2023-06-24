@@ -75,7 +75,7 @@ nav ul li a:hover::after{
 /* -- Beginning of Homepage styling -- */
 .header-text{
     /*Header styling*/
-    padding: 100px;
+    padding: 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 0 0 15px 15px;
     box-shadow: 0px 0px 35px rgba(0,0,0,0.25);
@@ -163,7 +163,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 20px 0;
 
 }
 .tab-contents ul li span{
@@ -174,12 +174,18 @@ nav ul li a:hover::after{
 .tab-contents ul li span.do-like{
     font-size: 20px;
     font-weight: 700;
-    color: rgb(90, 241, 191);
+    color: rgb(119, 201, 207);
 }
 .tab-contents ul li span.dont-like{
     font-size: 20px;
     font-weight: 700;
-    color: rgb(241, 108, 90);
+    color: rgb(56, 76, 78);
+}
+.tab-contents ul li span.schools{
+    list-style: circle;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(56, 76, 78);
 }
 .tab-contents{
     display: none;
