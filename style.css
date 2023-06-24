@@ -15,20 +15,23 @@ body{
     color: #000000;
     background: #ffffff;
 }
-header {
+header{
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-image: url(images/background.jpg);
 }
-.logo {
+.logo{
     color: #000;
     font-size: 2em;
     font-weight: 800;
     pointer-events: none;
 }
 .container {
+    padding: 10px 10%;
+}
+.container-blog {
     padding: 10px 10%;
 }
 nav {
@@ -192,4 +195,18 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+
+/* -- Beginning of Blog styling -- */
+#blogposts{
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/background-2.jpg);
+}
+.blog-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }

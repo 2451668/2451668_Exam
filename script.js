@@ -1,4 +1,5 @@
 
+//transitions between portfolio headers. Referenced in full in the Design section. 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
