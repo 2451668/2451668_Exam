@@ -71,6 +71,8 @@ nav ul li a:hover::after{
     width: 100%;
 
 }
+
+/* -- Beginning of Homepage styling -- */
 .header-text{
     /*Header styling*/
     padding: 100px;
@@ -86,6 +88,24 @@ nav ul li a:hover::after{
     font-size: 60px;
     margin-top: 30%;
     font-weight: bolder;
+}
+.header-text h1 span.head{
+    color: rgba(0,0,0,0.25);;
+}
+.header-text p span.home{
+    color: rgb(216, 77, 77);
+}
+.header-text p span.about{
+    color: rgb(226, 107, 60);
+}
+.header-text p span.essay{
+    color: rgb(226, 178, 48);
+}
+.header-text p span.blog{
+    color: rgb(245, 242, 65);
+}
+.header-text p span.design{
+    color: rgb(227, 238, 69);
 }
 
 /* -- Beginning of About me styling -- */
@@ -114,4 +134,38 @@ nav ul li a:hover::after{
     font-size: 50px;
     font-weight: 900;
     color: #000000;
+}
+.tab-text{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-content ul li span{
+    color: aqua;
+    font-size: 20px;
+    font-weight: 700;
 }
