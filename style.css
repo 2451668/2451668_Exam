@@ -337,6 +337,7 @@ nav ul li a:hover::after{
 .docum h1{
     font-size: 25px;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 .docum p{
     margin-top: 20px;
@@ -344,6 +345,18 @@ nav ul li a:hover::after{
     font-weight: 600;
     margin-bottom: 20px;
     margin-left: 10px;
+}
+.docum a{
+    text-decoration: none;
+    color: rgb(102, 77, 170);
+}
+
+.design-column-one{
+    flex-basis: 49%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+    border-radius: 15px;
 }
 .design-column-one p:first-child:first-letter{  
     float: left;    
@@ -353,13 +366,52 @@ nav ul li a:hover::after{
     padding-right: 8px;
     padding-left: 3px;
 }
-.design-column-one{
+.design-column-two{
     flex-basis: 50%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.11);
+    background-color: rgb(26, 25, 25);
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.08);
     padding: 15px;
     border-radius: 15px;
 }
-.design-column-two{
-    flex-basis: 50%;
+.design-column-two p{
+    color: rgb(248, 234, 234);
+}
+.design-column-two p:first-child:first-letter{  
+    float: left;    
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+/* -- Beginning of Essay styling -- */
+#essays{
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/background-2.jpg);
+}
+.container-essay{
+    padding: 10px 10%;
+}
+.container-essay p{
+    color: rgb(255, 255, 255);
+}
+
+/* -- Footer styling -- */
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(19, 19, 19);
+    margin-top: 20px;
+}
+footer p{
+  font-weight: 200;
+  color: rgb(155, 155, 155);
+}
+address{
+    font-weight: 200;
+  color: rgb(155, 155, 155);
 }
