@@ -306,13 +306,60 @@ nav ul li a:hover::after{
     font-weight: 700;
     color: rgb(0, 0, 0);
 }
+.layer a{
+    /*same link styling as used in the navbar*/
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none;
+    
+}
+.layer a::after{
+    /*hover animation styling*/
+    right: 0;
+    width: 0%;
+    height: 4px;
+    content: '';
+    bottom: -6px;
+    transition: 0.15s;
+    border-radius: 3px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+}
+.layer a:hover::after{
+    width: 100%;
+
+}
 .docum{
     margin-top: 50px;
 }
 .docum h1{
     font-size: 25px;
+    margin-bottom: 25px;
 }
 .docum p{
+    margin-top: 20px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.design-column-one p:first-child:first-letter{  
+    float: left;    
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+.design-column-one{
+    flex-basis: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.11);
+    padding: 15px;
+    border-radius: 15px;
+}
+.design-column-two{
+    flex-basis: 50%;
 }
