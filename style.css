@@ -1,19 +1,19 @@
 /*One of the best fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
 
-::-webkit-scrollbar {
+::-webkit-scrollbar{
     /*Looks cooler with no scrollbar*/
     display: none;
 }
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins' , sans-serif;
 }
 body{
-    color: #000000;
-    background: #ffffff;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
 }
 header{
     width: 100%;
@@ -23,22 +23,16 @@ header{
     background-image: url(images/background.jpg);
 }
 .logo{
-    color: #252525;
+    color: rgb(29, 29, 29);
     font-size: 2em;
     font-weight: 800;
     pointer-events: none;
     padding-left: 40px;
 }
-.container {
+.container{
     padding: 50px 10%;
 }
-.container-blog {
-    padding: 10px 10%;
-}
-.container-design {
-    padding: 50px 10%;
-}
-nav {
+nav{
     /*Navbar styling*/
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +44,7 @@ nav {
     
     
 }
-nav ul li {
+nav ul li{
     list-style: none;
     margin: 10px 20px;
     display: inline-block;
@@ -59,7 +53,7 @@ nav ul li a{
     /*link styling*/
     font-size: 18px;
     font-weight: 600;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     position: relative;
     text-decoration: none;
     
@@ -74,7 +68,7 @@ nav ul li a::after{
     transition: 0.15s;
     border-radius: 3px;
     position: absolute;
-    background: #ffffff;
+    background: rgb(255, 255, 255);
 }
 nav ul li a:hover::after{
     width: 100%;
@@ -120,7 +114,13 @@ nav ul li a:hover::after{
 /* -- Beginning of About me styling -- */
 #about{
     padding: 80px 0;
-    color: #000;
+    color: rgb(0, 0, 0)
+}
+.container-blog{
+    padding: 10px 10%;
+}
+.container-blog p{
+    color: rgb(255, 255, 255);
 }
 .row{
     display: flex;
@@ -160,14 +160,15 @@ nav ul li a:hover::after{
     position: relative;
 }
 .tab-links::after{
+    /*Similar effect as in the navbar's hover animation s*/
     content: '';
     width: 0;
     height: 5px;
-    background: #000000;
+    background: rgb(0, 0, 0);
     position: absolute;
     right: 0;
     bottom: -6px;
-    transition: 0.11s;
+    transition: 0.35s;
     border-radius: 2px;
 }
 .tab-links.active-link::after{
@@ -213,6 +214,16 @@ nav ul li a:hover::after{
     background-position: center;
     background-image: url(images/background-2.jpg);
 }
+.blogtext{
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+.blogtextsmall{
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 10px;
+}
 .blog-items{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -227,6 +238,7 @@ nav ul li a:hover::after{
     transition: background 0.3s, transform 0.3s;
 }
 .blog-items div:hover{
+    /*hover and fade animation for each post*/
     background-color: rgb(255, 255, 255);
     transform: translateY(-5px);
 }
@@ -244,4 +256,63 @@ nav ul li a:hover::after{
 /* -- Beginning of Design styling -- */
 #design{
     padding: 50px 0;
+}
+.container-design{
+    padding: 50px 10%;
+}
+.wframes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.wframe{
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.wframe img{
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s;
+}
+.wframe:hover img{
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.363);
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,);
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: left;
+    font-size: 18px;
+}
+.layer h3{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.layer p{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.docum{
+    margin-top: 50px;
+}
+.docum h1{
+    font-size: 25px;
+}
+.docum p{
+    font-size: 15px;
+    font-weight: 400;
 }
