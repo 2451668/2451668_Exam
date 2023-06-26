@@ -11,6 +11,9 @@
     box-sizing: border-box;
     font-family: 'Poppins' , sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
@@ -93,22 +96,22 @@ nav ul li a:hover::after{
     font-weight: bolder;
 }
 .header-text h1 span.head{
-    color: rgba(0,0,0,0.25);;
+    color: rgba(0, 0, 0, 0.25);;
 }
 .header-text p span.home{
     color: rgb(216, 77, 77);
 }
 .header-text p span.about{
-    color: rgb(226, 107, 60);
+    color: rgb(226, 60, 60);
 }
 .header-text p span.essay{
-    color: rgb(226, 178, 48);
+    color: rgb(226, 48, 48);
 }
 .header-text p span.blog{
-    color: rgb(245, 242, 65);
+    color: rgb(245, 65, 65);
 }
 .header-text p span.design{
-    color: rgb(227, 238, 69);
+    color: rgb(238, 69, 69);
 }
 
 /* -- Beginning of About me styling -- */
@@ -457,4 +460,36 @@ footer p{
 address{
     font-weight: 200;
   color: rgb(155, 155, 155);
+}
+
+/* -- Responsive code -- */
+@media only screen and (max-width : 600px){
+    #header{
+
+    }
+    .header-text{
+            
+            font-size: 16px;
+    }
+    .header-text h1{
+            font-size: 16px;
+        }
+    
+    
+    .subtext{
+            font-size: 40px;
+        }
+    .about-column-one, .about-column-two{
+            flex-basis: 100%;
+        }
+    .about-column-one{
+            margin-bottom: 30px;
+        }
+    .about-column-two{
+            font-size: 14px;
+        }
+    .tab-links{
+            font-size: 16px;
+            margin-right: 20px;
+    }
 }
