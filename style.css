@@ -390,13 +390,56 @@ nav ul li a:hover::after{
     padding: 30px 0;
     background-size: cover;
     background-position: center;
-    background-image: url(images/background-2.jpg);
+    background-image: url(images/Essay-image.jpg);
 }
 .container-essay{
     padding: 10px 10%;
 }
 .container-essay p{
     color: rgb(255, 255, 255);
+}
+.essaytext{
+    font-size: 50px;
+    font-weight: 900;
+    color: #ffffff;
+}
+.essay-content{
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 30px;
+}
+.essay-reference{
+    background: rgba(255, 255, 255, 0.363);
+    border-radius: 15px;
+    padding: 20px;
+}
+.essay-content h1{
+    color: rgb(189, 169, 169);
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.essay-reference p{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.essay-content p{
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    
+}
+.essay-reference h1{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    
 }
 
 /* -- Footer styling -- */
